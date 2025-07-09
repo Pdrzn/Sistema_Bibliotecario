@@ -1,5 +1,6 @@
 # servidor.py
 from flask import Flask, jsonify
+import os
 
 app = Flask(__name__)
 
@@ -13,4 +14,5 @@ def autorizados():
     return jsonify({"autorizados": IDS_AUTORIZADOS})
 
 if __name__ == "__main__":
-    app.run()
+    port = int(os.environ.get("PORT", 5000))  # Render define essa porta
+    app.run(host="0.0.0.0", port=port)
