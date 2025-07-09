@@ -5,6 +5,7 @@ import threading
 import time
 import queue
 from datetime import datetime, timedelta
+import Cód_Segurança_Licença
 
 # === Tkinter (Interface Gráfica) ===
 import tkinter as tk
