@@ -15,7 +15,7 @@ def gerar_id_unico():
 
 def verificar_id_remoto(id_gerado):
     try:
-        url = "LINK DO SERVIDOR VAI AQUI!!!!!"
+        url = "https://sistema-bibliotecario-u1nb.onrender.com"
         resposta = requests.get(url)
         if resposta.status_code == 200:
             dados = resposta.json()
